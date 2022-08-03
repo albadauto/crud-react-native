@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     total:{
-        color: 'green',
+        color: '#00aa0e',
         fontSize: 25,
         fontWeight: 'bold'
     },
@@ -42,5 +42,31 @@ export const styles = StyleSheet.create({
     },
     buttonSubmit:{
         backgroundColor: '#F24F00'
+    },
+    formRetirarDinheiro:{
+        alignItems:'center',
+        justifyContent:'space-between',
+        flexDirection: 'row',
+        paddingBottom: 20
+    },
+    textMais:{
+        fontSize: 30,
+    },
+    buttonAdd:{
+        backgroundColor: '#5afc68',
+        padding: 10,
+        borderRadius: 50
+    },
+    dinheiroRetirar:{
+        fontSize: 20,
+        fontWeight: 'bold'
+    },
+    buttonRemove:{
+        backgroundColor: '#f74873',
+        padding: 10,
+        borderRadius: 50
+    },
+    textMenos:{
+        fontSize: 30,
     }
 })
