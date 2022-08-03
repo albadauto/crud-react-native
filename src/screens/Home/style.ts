@@ -25,7 +25,8 @@ export const styles = StyleSheet.create({
     form:{
         backgroundColor: '#fff',
         marginTop: 20,
-        padding: 30
+        padding: 30,
+        borderRadius: 10
     },
     title:{
         alignSelf: 'center',
