@@ -4,6 +4,7 @@ import { styles } from './style'
 import { ICarteira } from '../../interfaces/Carteira.interface'
 import { api } from '../../api';
 import { showMessage } from 'react-native-flash-message';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function Home() {
   const [carteiraData, setCarteiraData] = useState<ICarteira>({} as ICarteira);

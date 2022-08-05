@@ -7,6 +7,7 @@ import Home from './src/screens/Home/Index';
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import Header from './src/components/Header/Index';
 import FlashMessage from 'react-native-flash-message';
+import Login from './src/screens/Login/Index';
 export default function App() {
   const Tab = createBottomTabNavigator();
   const colorMain: string = '#F24F00'
@@ -15,7 +16,7 @@ export default function App() {
       <Header />
       <FlashMessage />
       <StatusBar style="auto" />
-      <Tab.Navigator screenOptions={{ headerShown: false }} >
+      <Tab.Navigator screenOptions={{ headerShown: false, tabBarHideOnKeyboard: true }} >
         <Tab.Screen name="Home" component={Home} options={{
           tabBarLabel: ({color, focused}) => {
             return (
@@ -45,7 +46,7 @@ export default function App() {
           }
         }} />
 
-        <Tab.Screen name="Login" component={About} options={{
+        <Tab.Screen name="Login" component={Login} options={{
            tabBarLabel: ({focused}) => {
             return (
               <Text style={{ color: focused ? colorMain : '#000'}}>Login</Text>
@@ -64,11 +65,3 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
